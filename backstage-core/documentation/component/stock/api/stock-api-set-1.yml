@@ -12,7 +12,7 @@ spec:
     openapi: "3.0.0"
     info:
       version: 1.0.0
-      title: Artist API
+      title: Artist API modificada en mi repo ojala funcione XD
       license:
         name: MIT
     servers:
