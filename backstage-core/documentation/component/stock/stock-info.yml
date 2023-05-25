@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: StockManagement
+  namespace: inventos
+  description: Organiza los productos en los diferentes marketplaces
+  tags:
+    - mercado-libre
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  Links:
+    - title: Development portal
+      url: https://developers.mercadolibre.com.mx/
+spec:
+  type: external-Api
+  domain: inventos-domain
+  system: Mktplace-Integration
+  owner: default/integrador-team
+  lifecycle: experimental
+  dependsOn:
+    - resource:inventos/MercadoLibreApi
+  providesApis:
+    - api:default/stock-api-1
+    - api:default/stock-api-2

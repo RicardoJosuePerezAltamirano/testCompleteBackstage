@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: integrador-team
+  description: Equipo del proyecto del integrador
+spec:
+  type: team
+  profile:
+    displayName: IntegradorTeam
+    email: infrastructure@example.com
+  children: []

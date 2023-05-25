@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: Components-location
+  description: La fuente de informacion de los componentes
+  type: url
+# Nececita docker para ejecutar. Espera de servidores con kubernates o similares
+#  annotations:
+#    backstage.io/techdocs-ref: dir:.
+spec:
+  targets:
+  - ./stock/api/stock-api-set-1.yml
+  - ./stock/stock-info.yml

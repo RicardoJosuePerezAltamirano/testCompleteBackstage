@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: MercadoLibreApi
+  namespace: inventos
+  description: Mercado Libre Api connection
+  tags:
+    - mercado-libre
+# Nececita docker para ejecutar. Espera de servidores con kubernates o similares
+#  annotations:
+#    backstage.io/techdocs-ref: dir:.
+  Links:
+    - title: Development portal
+      url: https://developers.mercadolibre.com.mx/
+spec:
+  type: external-Api
+  domain: inventos-domain
+  owner: default/integrador-team
+  system: Mktplace-Integration

@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: Mktplace-Integration
+  namespace: inventos
+  description: Integrador de marketplaces para manejo de stock
+# Nececita docker para ejecutar. Espera de servidores con kubernates o similares
+#  annotations:
+#    backstage.io/techdocs-ref: dir:.
+spec:
+  owner: default/integrador-team
+  domain: inventos-domain

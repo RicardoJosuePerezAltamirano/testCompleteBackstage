@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: Marketplace-integration-catalog-info
+  description: La fuente de informacion de marketplace inegrations
+  type: file
+# Nececita docker para ejecutar. Espera de servidores con kubernates o similares
+#  annotations:
+#    backstage.io/techdocs-ref: dir:.
+spec:
+  targets:
+  - ./group/catalog-info.yml
+  - ./resources/resource-info.yml
+  - ./systems/integrator-system.yml
+  - ./component/components-info.yml
